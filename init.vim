@@ -164,7 +164,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "Window size settings
 "set nofu
-set lines=80 columns=125
+"set lines=80 columns=125
 
 "Font size settings
 set guifont=Consolas:h14
