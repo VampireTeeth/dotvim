@@ -188,6 +188,7 @@ nnoremap <leader>2 :tabnext<CR>
 nnoremap <leader>3 :bprevious<CR>
 nnoremap <leader>4 :bnext<CR>
 nnoremap <leader>qf :copen<CR>
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 nnoremap <leader>ZZ :bd %<CR>
 nnoremap <leader>ev :tabe $MYVIMRC<CR>
@@ -337,3 +338,4 @@ endfu
 
 nnoremap <leader>* :call SearchWordUnderCursorInFilesOfTheSameType()<CR><CR>:copen<CR>
 vnoremap <leader>* :call SearchSelectionInFilesOfTheSameType()<CR><CR>:copen<CR>
+let g:ycm_global_ycm_extra_conf = "~/.ycm_global_extra_conf.py"
