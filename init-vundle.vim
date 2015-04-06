@@ -65,6 +65,8 @@ Plugin 'mattn/emmet-vim'
 
 Plugin 'sjl/badwolf'
 "...All your other bundles...
+Plugin 'vim-scripts/c.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
