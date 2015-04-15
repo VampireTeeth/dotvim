@@ -167,7 +167,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 "set lines=80 columns=125
 
 "Font size settings
-set guifont=Consolas:h14
+"set guifont=Consolas:h14
 
 set wrap
 "Key mappings

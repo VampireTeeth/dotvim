@@ -63,8 +63,9 @@ Plugin 'eagletmt/ghcmod-vim'
 Plugin 'indenthtml.vim'
 Plugin 'mattn/emmet-vim'
 
-Plugin 'sjl/badwolf'
 "...All your other bundles...
+Plugin 'sjl/badwolf'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 
