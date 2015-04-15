@@ -291,7 +291,8 @@ let g:php_refactor_command='php ~/bin/refactor.phar'
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
-colorscheme Tomorrow-Night
+"colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Eighties
 
 hi Normal ctermfg=none ctermbg=none
 hi NonText ctermbg=none
