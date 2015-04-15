@@ -68,7 +68,7 @@ Plugin 'sjl/badwolf'
 Plugin 'fatih/vim-go'
 
 Plugin 'vim-scripts/c.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
