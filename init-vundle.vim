@@ -64,8 +64,13 @@ Plugin 'indenthtml.vim'
 Plugin 'mattn/emmet-vim'
 
 "...All your other bundles...
+<<<<<<< HEAD
 Plugin 'sjl/badwolf'
 Plugin 'fatih/vim-go'
+=======
+Plugin 'vim-scripts/c.vim'
+Plugin 'Valloric/YouCompleteMe'
+>>>>>>> b93841e974482b5f199ccc862f47f2dbf861eab5
 
 call vundle#end()
 
