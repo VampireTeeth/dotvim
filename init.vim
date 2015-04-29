@@ -131,14 +131,6 @@ set cursorline cursorcolumn
 "------------------------------------------------------------
 " Indentation options {{{1
 "
-" Indentation settings according to personal preference.
-
-" Indentation settings for using 2 spaces instead of tabs.
-" Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
-set expandtab
 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " two characters wide.
@@ -311,12 +303,6 @@ fu! SetFtXml()
   set filetype=xml
 endfu
 
-augroup hooks
-  autocmd!
-  autocmd BufRead,BufNewFile ~/.xmonad/* call s:add_xmonad_path()
-  autocmd FileType tagbar setlocal cursorline
-  autocmd BufRead,BufNewFile *.html,*.xhtml,*.xml call SetFtXml()
-augroup END
 
 function! SearchPatternInFiles(pattern, files)
   let cmd = "vimgrep " . a:pattern . " " . a:files
@@ -340,3 +326,29 @@ endfu
 nnoremap <leader>* :call SearchWordUnderCursorInFilesOfTheSameType()<CR><CR>:copen<CR>
 vnoremap <leader>* :call SearchSelectionInFilesOfTheSameType()<CR><CR>:copen<CR>
 let g:ycm_global_ycm_extra_conf = "~/.ycm_global_extra_conf.py"
+
+" Indentation settings according to personal preference.
+
+" Indentation settings for using 2 spaces instead of tabs.
+" Do not change 'tabstop' from its default value of 8 with this setup.
+
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
+
+fu! SetIndentations()
+  set shiftwidth=2
+  set softtabstop=2
+  set tabstop=2
+  set expandtab
+endfu
+
+" All hooks
+augroup hooks
+  autocmd!
+  autocmd BufRead,BufNewFile ~/.xmonad/* call s:add_xmonad_path()
+  autocmd FileType tagbar setlocal cursorline
+  autocmd FileType python call SetIndentations()
+  autocmd BufRead,BufNewFile *.html,*.xhtml,*.xml call SetFtXml()
+augroup END
