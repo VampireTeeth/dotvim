@@ -69,6 +69,7 @@ Plugin 'fatih/vim-go'
 
 Plugin 'vim-scripts/c.vim'
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'Zenburn'
 
 call vundle#end()
 

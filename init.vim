@@ -24,7 +24,6 @@ set nobackup
 set noswapfile
 set fileformat=unix
 
-"Colorscheme setting
 "------------------------------------------------------------
 " Must have options {{{1
 "
@@ -285,7 +284,8 @@ set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
 "colorscheme Tomorrow-Night
-colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow-Night-Eighties
+colorscheme zenburn
 
 hi Normal ctermfg=none ctermbg=none
 hi NonText ctermbg=none
