@@ -1,7 +1,3 @@
-if !$VIM_INIT_SUFFIX_LIST
-  echom "Please set environment variable VIM_INIT_SUFFIX_LIST"
-  execute ":qa"
-endif
 let init_suffix_list=split($VIM_INIT_SUFFIX_LIST, ":")
 let g:first_time_run=0
 
