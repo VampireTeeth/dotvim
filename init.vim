@@ -1,4 +1,4 @@
-if $VIM_INIT_SUFFIX_LIST
+if !$VIM_INIT_SUFFIX_LIST
   echom "Please set environment variable VIM_INIT_SUFFIX_LIST"
   execute ":qa"
 endif
