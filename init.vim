@@ -1,4 +1,9 @@
-let programming_languages=["python", "html"]
+if $VIM_INIT_SUFFIX_LIST
+  echom "Please set environment variable VIM_INIT_SUFFIX_LIST"
+  execute ":qa"
+endif
+let init_suffix_list=split($VIM_INIT_SUFFIX_LIST, ":")
+let g:first_time_run=0
 
 fu! SourceVimScript(file)
   execute ":so " . expand(a:file)
@@ -14,15 +19,24 @@ call SourceVimScript("~/.vim/init-vundle.vim")
 
 filetype plugin indent on
 
+fu! LoadSettings(init_suffix_list)
+  call SourceVimScript("~/.vim/init-common.vim")
+  call SourceVimScript("~/.vim/init-mapping.vim")
 
-call SourceVimScript("~/.vim/init-common.vim")
-call SourceVimScript("~/.vim/init-mapping.vim")
+  for lang in a:init_suffix_list
+    let file = "~/.vim/init-" . lang . ".vim"
+    if FileExists(file)
+      echom "Sourcing " . file
+      call SourceVimScript(file)
+    endif
+  endfor
+endfu
 
-for lang in programming_languages 
-  let file = "~/.vim/init-" . lang . ".vim"
-  if FileExists(file)
-    echom "Sourcing " . file
-    call SourceVimScript(file)
-  endif
-endfor
+if g:first_time_run
+  echom "Please execute :PluginInstall to install plugins before loading the settings"
+else
+  call LoadSettings(init_suffix_list)
+endif
+
+
 

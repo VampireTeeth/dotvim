@@ -1,4 +1,5 @@
 "Setting up Vundle for the first time
+
 let vundle_home = expand('~/.vim/bundle/Vundle.vim')
 let vundle_readme=vundle_home . '/README.md'
 if !filereadable(vundle_readme)
@@ -10,6 +11,7 @@ if !filereadable(vundle_readme)
 
   execute mkdir_cmd
   execute clone_cmd
+  let g:first_time_run=1
 endif
 let &rtp=vundle_home . ',' . &rtp
 
@@ -24,7 +26,7 @@ call SourceVimScript("~/.vim/init-vundle-common.vim")
 
 "Load language plugins
 "
-for lang in programming_languages 
+for lang in init_suffix_list
   let file = "~/.vim/init-vundle-" . lang . ".vim"
   if FileExists(file)
     echom "Sourcing " . file
@@ -32,3 +34,4 @@ for lang in programming_languages
   endif
 endfor
 call vundle#end()
+
