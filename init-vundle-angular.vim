@@ -1,0 +1,1 @@
+Plugin 'burnettk/vim-angular'
