@@ -49,12 +49,12 @@ inoremap <ESC> <ESC>
 
 
 "Eclim Settings
-nnoremap <leader>jc :JavaConstructor<CR>
-nnoremap <leader>jg :JavaGet<CR>
-nnoremap <leader>js :JavaSet<CR>
-nnoremap <leader>jp :JavaGetSet<CR>
-nnoremap <leader>js :JavaSearch<CR>
-nnoremap <leader>jh :JavaCallHierarchy<CR>
-nnoremap <leader>ji :JavaImport<CR>
-nnoremap <leader>jo :JavaImportOrganize<CR>
-nnoremap <leader>ju :JUnit<CR>
+nnoremap <leader>jjc :JavaConstructor<CR>
+nnoremap <leader>jjg :JavaGet<CR>
+nnoremap <leader>jjs :JavaSet<CR>
+nnoremap <leader>jjp :JavaGetSet<CR>
+nnoremap <leader>jjs :JavaSearch<CR>
+nnoremap <leader>jjh :JavaCallHierarchy<CR>
+nnoremap <leader>jji :JavaImport<CR>
+nnoremap <leader>jjo :JavaImportOrganize<CR>
+nnoremap <leader>jju :JUnit<CR>
