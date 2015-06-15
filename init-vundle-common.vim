@@ -1,6 +1,6 @@
 Plugin 'L9'
 Plugin 'scrooloose/nerdtree'
-Plugin 'wincent/command-t'
+"Plugin 'wincent/command-t'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'majutsushi/tagbar'
 Plugin 'flazz/vim-colorschemes'
