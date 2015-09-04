@@ -95,6 +95,9 @@ set tabstop=2
 set expandtab
 let g:SuperTabDefaultCompletionType = '<C-x><C-i>'
 
+"ctrlp max file limit -- no limit
+let g:ctrlp_max_files=0 
+
 fu! GetSelectionText()
   exe 'normal! gv"ay'
   return getreg("a")
