@@ -83,7 +83,8 @@ set wrap
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
-colorscheme zenburn
+"colorscheme zenburn
+colorscheme koehler
 
 hi Normal ctermfg=none ctermbg=none
 hi NonText ctermbg=none
