@@ -41,15 +41,17 @@ nnoremap <leader>sv :so $MYVIMRC<CR>
 nnoremap <leader>" viw<ESC>a"<ESC>hbi"<ESC>lel
 nnoremap <leader>k <C-u> 
 nnoremap <leader>j <C-d>
-nnoremap <leader>J <C-w>j
-nnoremap <leader>K <C-w>k
-nnoremap <leader>H <C-w>h
-nnoremap <leader>L <C-w>l
-nnoremap <leader>O <C-w>o
+nnoremap <leader>wj <C-w>j
+nnoremap <leader>wk <C-w>k
+nnoremap <leader>wh <C-w>h
+nnoremap <leader>wl <C-w>l
+nnoremap <leader>wo <C-w>o
 nnoremap <leader>= <C-w>=
 nnoremap <leader>v <C-v>
 nnoremap <leader>bd :Bd<CR>
 vnoremap <leader>" di""<ESC>hp
+
+nnoremap <leader>y :"+y<CR>
 vnoremap <leader>y "+y
 vnoremap <leader>p "+p
 
