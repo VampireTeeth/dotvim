@@ -42,10 +42,6 @@ set autoindent
 " coming from other editors would expect.
 set nostartofline
 
-" Display the cursor position on the last line of the screen or in the status
-" line of a window
-set ruler
-
 " Always display the status line, even if only one window is displayed
 set laststatus=2
 
@@ -83,7 +79,8 @@ set wrap
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
-colorscheme zenburn
+"colorscheme zenburn
+colorscheme koehler
 
 hi Normal ctermfg=none ctermbg=none
 hi NonText ctermbg=none
@@ -94,6 +91,9 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 let g:SuperTabDefaultCompletionType = '<C-x><C-i>'
+
+"ctrlp max file limit -- no limit
+let g:ctrlp_max_files=0 
 
 fu! GetSelectionText()
   exe 'normal! gv"ay'
