@@ -1,6 +1,7 @@
 " Re-mapping of 'jj' to <esc>
-inoremap jj <esc>
-vnoremap jj <esc>
+inoremap jk <esc>
+vnoremap jk <esc>
+cnoremap jk <esc>
 set timeout
 set timeoutlen=200
 
