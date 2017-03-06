@@ -1,3 +1,9 @@
+" Re-mapping of 'jj' to <esc>
+inoremap jj <esc>
+vnoremap jj <esc>
+set timeout
+set timeoutlen=200
+
 " Useful mappings
 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
@@ -21,7 +27,6 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 nnoremap <space> <nop>
 let mapleader = "\<space>"
-
 command Bd b#<bar>bd#
 
 nnoremap <leader>tb :Tagbar<CR>

@@ -7,7 +7,8 @@ endif
 
 let &rtp=eclim_vim . ',' . &rtp
 
-
 if !exists('g:EclimDisabled')
   let g:EclimDisabled = 1
 endif
+
+execute ":so ~/.vim/plugin/eclim.vim"

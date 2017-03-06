@@ -1,11 +1,8 @@
 " Author:  Eric Van Dewoestine
 "
-" Description: {{{
-"   Vim file type detection script for eclim.
+" License: {{{
 "
-" License:
-"
-" Copyright (C) 2005 - 2011  Eric Van Dewoestine
+" Copyright (C) 2014  Eric Van Dewoestine
 "
 " This program is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
@@ -22,7 +19,6 @@
 "
 " }}}
 
-autocmd BufRead .buildpath
-  \ call EclimSetXmlFileType({'buildpath': 'eclipse_buildpath'})
+source $VIMRUNTIME/syntax/qf.vim
 
 " vim:ft=vim:fdm=marker

@@ -1,4 +1,4 @@
-*vim-code_completion*
+*vim-code_completion.html*
 
 Code Completion
 ***************
@@ -116,8 +116,8 @@ plugins which can make completion usage less cumbersome:
   completion results. This plugin does have a compiled component to it
   so be sure to read their install docs thoroughly.
   Once installed, the only required configuration you should need is
-  the following to tell eclim to register its completion to vim's omni
-  complete which YouCompleteMe will automatically detect and use:
+  the following which tells eclim to register its completion to vim's
+  omni complete which YouCompleteMe will automatically detect and use:
 
   >
      let g:EclimCompletionMethod = 'omnifunc'
