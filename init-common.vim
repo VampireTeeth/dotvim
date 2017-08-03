@@ -96,8 +96,13 @@ set tabstop=4
 set expandtab
 let g:SuperTabDefaultCompletionType = '<C-x><C-i>'
 
+
+"showing shady characters
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~,space:\uB7,eol:$"
+set list
+
 "ctrlp max file limit -- no limit
-let g:ctrlp_max_files=0 
+let g:ctrlp_max_files=0
 
 fu! GetSelectionText()
   exe 'normal! gv"ay'

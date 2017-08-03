@@ -1,5 +1,5 @@
 Plugin 'klen/python-mode'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
 "Plugin 'kevinw/pyflakes-vim'
-Plugin 'fs111/pydoc.vim'
-Plugin 'vim-scripts/Pydiction'
+"Plugin 'fs111/pydoc.vim'
+"Plugin 'vim-scripts/Pydiction'
