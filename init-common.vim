@@ -76,6 +76,7 @@ set pastetoggle=<F11>
 set cursorline cursorcolumn
 set wrap
 
+scriptencoding utf-8
 set encoding=utf-8  " The encoding displayed.
 set fileencoding=utf-8  " The encoding written to file.
 
@@ -84,7 +85,8 @@ set fileencoding=utf-8  " The encoding written to file.
 set relativenumber
 
 "colorscheme zenburn
-colorscheme koehler
+"colorscheme koehler
+colorscheme onedark
 
 hi Normal ctermfg=none ctermbg=none
 hi NonText ctermbg=none
