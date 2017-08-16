@@ -103,6 +103,9 @@ let g:SuperTabDefaultCompletionType = '<C-x><C-i>'
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~,space:\uB7,eol:$"
 set list
 
+"completeopt configuration
+set completeopt=longest,menuone
+
 "ctrlp max file limit -- no limit
 let g:ctrlp_max_files=0
 
