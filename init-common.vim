@@ -108,6 +108,7 @@ set completeopt=longest,menuone
 
 "ctrlp max file limit -- no limit
 let g:ctrlp_max_files=0
+let g:ctrlp_working_path_mode='c'
 
 fu! GetSelectionText()
   exe 'normal! gv"ay'
@@ -165,6 +166,6 @@ augroup hooks
   autocmd FileType tagbar setlocal cursorline
   autocmd FileType python call SetIndentations()
   autocmd BufRead,BufNewFile *.html,*.xhtml,*.xml call SetFtXml()
-  "autocmd BufEnter * silent! lcd %:p:h
+  autocmd BufEnter * silent! lcd %:p:h
 augroup END
 
