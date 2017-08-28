@@ -156,6 +156,6 @@ augroup hooks
   autocmd FileType tagbar setlocal cursorline
   autocmd FileType python call SetIndentations()
   autocmd BufRead,BufNewFile *.html,*.xhtml,*.xml call SetFtXml()
-  autocmd BufEnter * silent! lcd %:p:h
+  "autocmd BufEnter * silent! lcd %:p:h
 augroup END
 

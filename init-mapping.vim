@@ -26,8 +26,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 "set guifont=Consolas:h14
 
 
-nnoremap <space> <nop>
-let mapleader = "\<space>"
+let mapleader = ","
 command Bd b#<bar>bd#
 
 nnoremap <leader>tb :Tagbar<CR>
