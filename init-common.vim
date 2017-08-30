@@ -84,6 +84,9 @@ set fileencoding=utf-8  " The encoding written to file.
 "Using relativenumber
 set relativenumber
 
+"Using shallslash
+set shellslash
+
 "colorscheme zenburn
 "colorscheme koehler
 colorscheme onedark
@@ -108,7 +111,7 @@ set completeopt=longest,menuone
 
 "ctrlp max file limit -- no limit
 let g:ctrlp_max_files=0
-let g:ctrlp_working_path_mode='c'
+let g:ctrlp_working_path_mode='w'
 
 fu! GetSelectionText()
   exe 'normal! gv"ay'
@@ -129,25 +132,29 @@ endfunction
 fu! SearchWordUnderCursorInFilesOfTheSameType()
   let pattern = '/' . expand("<cword>") . '/gj'
   let type = expand("%:e")
-  let files = expand("%:p:h") . '/**/*.' . type
+  "let files = expand("%:p:h") . '/**/*.' . type
+  let files = expand(".") . '/**/*.' . type
   call SearchPatternInFiles(pattern, files)
 endfu
 
 fu! SearchSelectionInFilesOfTheSameType()
   let pattern = '/' . GetSelectionText() . '/gj'
-  let files = expand("%:p:h") . '/**/*.' . expand("%:e")
+  "let files = expand("%:p:h") . '/**/*.' . expand("%:e")
+  let files = expand(".") . '/**/*.' . expand("%:e")
   call SearchPatternInFiles(pattern, files)
 endfu
 
 fu! SearchWordUnderCursorInFiles()
   let pattern = '/' . expand("<cword>") . '/gj'
-  let files = expand("%:p:h") . '/**/*.*'
+  "let files = expand("%:p:h") . '/**/*.*'
+  let files = expand(".") . '/**/*.*'
   call SearchPatternInFiles(pattern, files)
 endfu
 
 fu! SearchSelectionInFiles()
   let pattern = '/' . GetSelectionText() . '/gj'
-  let files = expand("%:p:h") . '/**/*.*'
+  "let files = expand("%:p:h") . '/**/*.*'
+  let files = expand(".") . '/**/*.*'
   call SearchPatternInFiles(pattern, files)
 endfu
 
@@ -166,6 +173,6 @@ augroup hooks
   autocmd FileType tagbar setlocal cursorline
   autocmd FileType python call SetIndentations()
   autocmd BufRead,BufNewFile *.html,*.xhtml,*.xml call SetFtXml()
-  autocmd BufEnter * silent! lcd %:p:h
+  "autocmd BufEnter * silent! lcd %:p:h
 augroup END
 
