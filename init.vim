@@ -34,5 +34,13 @@ else
   call LoadSettings(init_suffix_list)
 endif
 
-
+if has("gui_running")
+    set guioptions=icpM
+    if has('win32') || has('win64')
+        set guifont=Consolas:h11:cANSI
+        if (v:version == 704 && has("patch393")) || v:version > 704
+            set renderoptions=type:directx,level:0.75,gamma:1.25,contrast:0.25,geom:1,renmode:5,taamode:1
+        endif
+    endif
+endif
 

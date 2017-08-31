@@ -158,6 +158,18 @@ fu! SearchSelectionInFiles()
   call SearchPatternInFiles(pattern, files)
 endfu
 
+fu! SearchCWordInAck()
+    let pattern = expand("<cword>")
+    let cmd = "Ack " . pattern " ./"
+    exe cmd
+endfu
+
+fu! SearchSelectionInAck()
+    let pattern = GetSelectionText()
+    let cmd = "Ack " . pattern " ./"
+    exe cmd
+endfu
+
 
 fu! SetIndentations()
   set shiftwidth=2
