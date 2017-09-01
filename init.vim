@@ -19,12 +19,19 @@ fu! LoadSettings(init_suffix_list)
   call SourceVimScript("~/.vim/init-common.vim")
   call SourceVimScript("~/.vim/init-mapping.vim")
 
-  for lang in a:init_suffix_list
-    let file = "~/.vim/init-" . lang . ".vim"
+  for suffix in a:init_suffix_list
+    let file = "~/.vim/init-" . suffix . ".vim"
+    let mapping_file = "~/.vim/init-mapping-". suffix . ".vim"
     if FileExists(file)
       echom "Sourcing " . file
       call SourceVimScript(file)
     endif
+
+    if FileExists(mapping_file)
+      echom "Sourcing " . mapping_file
+      call SourceVimScript(mapping_file)
+    endif
+
   endfor
 endfu
 

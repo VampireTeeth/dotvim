@@ -92,26 +92,9 @@ inoremap <M-p> <C-x><C-f>
 "inoremap <ESC> <ESC>
 
 
-"Eclim Settings
-nnoremap <leader>jjc :JavaConstructor<CR>
-nnoremap <leader>jjg :JavaGet<CR>
-nnoremap <leader>jjs :JavaSet<CR>
-nnoremap <leader>jjp :JavaGetSet<CR>
-nnoremap <leader>jjs :JavaSearch<CR>
-nnoremap <leader>jjh :JavaCallHierarchy<CR>
-nnoremap <leader>jji :JavaImport<CR>
-nnoremap <leader>jjo :JavaImportOrganize<CR>
-nnoremap <leader>jju :JUnit<CR>
-vnoremap <leader>jjg :JavaGet<CR>
-vnoremap <leader>jjs :JavaSet<CR>
-vnoremap <leader>jje :JavaGetSet<CR>
-vnoremap <leader>jjc :JavaConstructor<CR>
-
 
 
 nnoremap <leader>ss :call SearchWordUnderCursorInFilesOfTheSameType()<CR><CR>:copen<CR>
 vnoremap <leader>ss :call SearchSelectionInFilesOfTheSameType()<CR><CR>:copen<CR>
 nnoremap <leader>sf :call SearchWordUnderCursorInFiles()<CR><CR>:copen<CR>
 vnoremap <leader>sf :call SearchSelectionInFiles()<CR><CR>:copen<CR>
-nnoremap <leader>sa :call SearchCWordInAck()<CR>
-vnoremap <leader>sa :call SearchSelectionInAck()<CR>

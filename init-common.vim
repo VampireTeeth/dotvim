@@ -171,19 +171,31 @@ fu! SearchSelectionInAck()
 endfu
 
 
-fu! SetIndentations()
-  set shiftwidth=2
-  set softtabstop=2
-  set tabstop=2
+fu! SetIndentations(num)
+  set shiftwidth=a:num
+  set softtabstop=a:num
+  set tabstop=a:num
   set expandtab
 endfu
+
+" Configuration for lightline
+fu! ConfigLightline()
+  let g:lightline = {
+        \ 'active': {
+          \ 'left': [ [ 'mode', 'paste' ],
+          \           [ 'readonly', 'relativepath', 'modified' ] ],
+          \ 'right': [ [ 'lineinfo' ],
+          \            [ 'percent' ],
+          \            [ 'fileformat', 'fileencoding', 'filetype' ] ] } }
+endfu
+call ConfigLightline()
 
 " All hooks
 augroup hooks
   autocmd!
   autocmd BufRead,BufNewFile ~/.xmonad/* call s:add_xmonad_path()
   autocmd FileType tagbar setlocal cursorline
-  autocmd FileType python call SetIndentations()
+  autocmd FileType python call SetIndentations(2)
   autocmd BufRead,BufNewFile *.html,*.xhtml,*.xml call SetFtXml()
   "autocmd BufEnter * silent! lcd %:p:h
 augroup END

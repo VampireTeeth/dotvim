@@ -26,8 +26,8 @@ call SourceVimScript("~/.vim/init-vundle-common.vim")
 
 "Load language plugins
 "
-for lang in init_suffix_list
-  let file = "~/.vim/init-vundle-" . lang . ".vim"
+for suffix in init_suffix_list
+  let file = "~/.vim/init-vundle-" . suffix . ".vim"
   if FileExists(file)
     echom "Sourcing " . file
     call SourceVimScript(file)
