@@ -2,7 +2,7 @@
 nnoremap <leader>jjc :JavaConstructor<CR>
 nnoremap <leader>jjg :JavaGet<CR>
 nnoremap <leader>jjs :JavaSet<CR>
-nnoremap <leader>jjp :JavaGetSet<CR>
+nnoremap <leader>jje :JavaGetSet<CR>
 nnoremap <leader>jjs :JavaSearch<CR>
 nnoremap <leader>jjh :JavaCallHierarchy<CR>
 nnoremap <leader>jji :JavaImport<CR>
