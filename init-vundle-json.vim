@@ -1,0 +1,1 @@
+Plugin 'leshill/vim-json'

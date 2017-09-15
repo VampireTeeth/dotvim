@@ -172,9 +172,10 @@ endfu
 
 
 fu! SetIndentations(num)
-  set shiftwidth=a:num
-  set softtabstop=a:num
-  set tabstop=a:num
+  let num = a:num
+  let &shiftwidth=num
+  let &softtabstop=num
+  let &tabstop=num
   set expandtab
 endfu
 
