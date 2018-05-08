@@ -57,6 +57,10 @@ nnoremap <leader>y :"+y<CR>
 vnoremap <leader>y "+y
 vnoremap <leader>p "+p
 
+nnoremap <leader>ff :<C-u>Unite file<CR>
+nnoremap <leader>fr :<C-u>Unite file_rec<CR>
+nnoremap <leader>fb :<C-u>Unite buffer<CR>
+
 inoremap <ESC> <ESC>
 inoremap <M-o> <C-x><C-o>
 inoremap <M-l> <C-x><C-l>
