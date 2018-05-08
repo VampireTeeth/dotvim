@@ -202,3 +202,4 @@ augroup hooks
   "autocmd BufEnter * silent! lcd %:p:h
 augroup END
 
+autocmd BufEnter * silent! lcd %:p:h
