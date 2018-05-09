@@ -20,3 +20,9 @@ Plugin 'othree/html5.vim'
 Plugin 'gtags.vim'
 Plugin 'rafi/awesome-vim-colorschemes'
 Plugin 'itchyny/lightline.vim'
+
+"Need to install fzf command
+if executable("fzf")
+    Plugin 'junegunn/fzf'
+    Plugin 'junegunn/fzf.vim'
+endif
