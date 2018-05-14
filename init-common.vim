@@ -17,6 +17,7 @@ set hidden
 " set autowriteall
 
 " Better command-line completion
+set wildmode=longest,list,full
 set wildmenu
 
 " Show partial commands in the last line of the screen
