@@ -26,3 +26,10 @@ if executable("fzf")
     Plugin 'junegunn/fzf'
     Plugin 'junegunn/fzf.vim'
 endif
+
+
+"Need to install erlang and iex command
+if executable("erl") && executable("iex")
+    Plugin 'elixir-lang/vim-elixir'
+    Plugin 'slashmili/alchemist.vim'
+endif
