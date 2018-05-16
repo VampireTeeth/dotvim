@@ -20,6 +20,8 @@ set hidden
 set wildmode=longest,list,full
 set wildmenu
 
+" Better complet options
+set completeopt=longest,menuone
 " Show partial commands in the last line of the screen
 set showcmd
 
