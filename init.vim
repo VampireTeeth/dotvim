@@ -11,7 +11,8 @@ endfu
 "required!
 filetype off 
 
-call SourceVimScript("~/.vim/init-vundle.vim")
+"call SourceVimScript("~/.vim/init-vundle.vim")
+call SourceVimScript("~/.vim/init-vim-plug.vim")
 
 filetype plugin indent on
 
