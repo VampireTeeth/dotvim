@@ -6,12 +6,12 @@ endif
 
 call plug#begin('~/.vim/bundle')
 
-Plug 'L9'
+Plug 'vim-scripts/L9'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'flazz/vim-colorschemes'
 Plug 'tomtom/tcomment_vim'
-Plug 'FuzzyFinder'
+Plug 'vim-scripts/FuzzyFinder'
 Plug 'Shougo/vimproc'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimshell'
@@ -19,7 +19,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'tomasr/molokai'
 Plug 'ervandew/supertab'
 Plug 'msanders/snipmate.vim'
-Plug 'Zenburn'
+Plug 'vim-scripts/Zenburn'
 Plug 'gre/play2vim'
 Plug 'othree/html5.vim'
 Plug 'gtags.vim'
