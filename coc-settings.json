@@ -17,6 +17,16 @@
                 "languageServerHaskell": {
                 }
             }
+        },
+
+        "kotlin": {
+            "command": "kotlin-language-server",
+            "rootPatterns": [
+                "pom.xml",
+                "build.gradle",
+                "build.gradle.kts"
+            ],
+            "filetypes": ["kt", "kotlin"]
         }
     }
 }

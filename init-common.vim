@@ -205,8 +205,6 @@ augroup hooks
   "autocmd BufEnter * silent! lcd %:p:h
 augroup END
 
-autocmd BufEnter * silent! lcd %:p:h
-
 if executable('ag')
     " Use ag (the silver searcher)
     " https://github.com/ggreer/the_silver_searcher
