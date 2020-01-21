@@ -1,3 +1,4 @@
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)

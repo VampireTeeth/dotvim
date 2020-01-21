@@ -22,10 +22,9 @@ Plug 'msanders/snipmate.vim'
 Plug 'vim-scripts/Zenburn'
 Plug 'gre/play2vim'
 Plug 'othree/html5.vim'
-Plug 'gtags.vim'
+Plug 'vim-scripts/gtags.vim'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'itchyny/lightline.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Need to install fzf command
 if executable("fzf")
