@@ -57,9 +57,10 @@ nnoremap <leader>y :"+y<CR>
 vnoremap <leader>y "+y
 vnoremap <leader>p "+p
 
-nnoremap <leader>ff :<C-u>Unite file<CR>
-nnoremap <leader>fr :<C-u>Unite file_rec<CR>
-nnoremap <leader>fb :<C-u>Unite buffer<CR>
+if executable("fzf")
+    nnoremap <leader>ff :Files<CR>
+    nnoremap <leader>bb :Buffers<CR>
+endif
 
 inoremap <ESC> <ESC>
 inoremap <M-o> <C-x><C-o>
@@ -102,3 +103,5 @@ nnoremap <leader>ss :call SearchWordUnderCursorInFilesOfTheSameType()<CR><CR>:co
 vnoremap <leader>ss :call SearchSelectionInFilesOfTheSameType()<CR><CR>:copen<CR>
 nnoremap <leader>sf :call SearchWordUnderCursorInFiles()<CR><CR>:copen<CR>
 vnoremap <leader>sf :call SearchSelectionInFiles()<CR><CR>:copen<CR>
+
+
