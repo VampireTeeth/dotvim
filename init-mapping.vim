@@ -97,8 +97,6 @@ inoremap <M-p> <C-x><C-f>
 "inoremap <ESC> <ESC>
 
 
-
-
 nnoremap <leader>ss :call SearchWordUnderCursorInFilesOfTheSameType()<CR><CR>:copen<CR>
 vnoremap <leader>ss :call SearchSelectionInFilesOfTheSameType()<CR><CR>:copen<CR>
 nnoremap <leader>sf :call SearchWordUnderCursorInFiles()<CR><CR>:copen<CR>
