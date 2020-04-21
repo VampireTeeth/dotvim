@@ -201,8 +201,12 @@ augroup hooks
   autocmd BufRead,BufNewFile ~/.xmonad/* call s:add_xmonad_path()
   autocmd FileType tagbar setlocal cursorline
   autocmd FileType python call SetIndentations(2)
-  autocmd BufRead,BufNewFile *.html,*.xhtml,*.xml call SetFtXml()
+  autocmd BufRead,BufNewFile html,xhtml,xml call SetFtXml()
   "autocmd BufEnter * silent! lcd %:p:h
+  "au FileType go set noexpandtab
+  "au FileType go set shiftwidth=4
+  "au FileType go set softtabstop=4
+  "au FileType go set tabstop=4
 augroup END
 
 if executable('ag')
